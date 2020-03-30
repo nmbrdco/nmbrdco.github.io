@@ -1,5 +1,108 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     color: lightgrey;
     font-size: 18px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav {
+    background: #353535;
+}
+
+.pure-button {
+    background-color: lightgrey;
+    color: black;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+.splash-container {
+    background: black;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+/* This is the main heading that appears on the black section */
+.splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 0;
+    line-height: 1em;
+}
+
+/* This is the subheading that appears on the black section */
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: black;
+
+}.flexbox {      
+  display: -webkit-flex;        
+  display: -ms-flexbox;     
+  display: flex;
+  overflow: hidden;
+}
+.flexbox .col {
+  flex: 1;
+  padding: 20px;
+}
+.flexbox .col:nth-child(1) { 
+  background: darkblue; 
+  -webkit-order: 1; 
+      -ms-flex-order: 1; 
+          order: 1;
+}
+.flexbox .col:nth-child(2) { 
+  background: blue;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.flexbox .col:nth-child(3) { 
+  background: blue;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
