@@ -1,2 +1,2 @@
 # nmbrdco.github.io
-source for first github pages site (https://nmbrdco.github.io/)
+source for our github pages site (https://nmbrdco.github.io/)
