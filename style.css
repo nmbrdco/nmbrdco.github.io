@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #222;
+    background-color: black;
     color: whitesmoke;
     font-size: 18px;
 }
@@ -16,8 +16,8 @@ a {
   font-weight: 600;
 }
 
-nav {
-    background: #353535;
+.pure-g > div {
+    box-sizing: border-box;
 }
 
 .pure-button {
@@ -29,23 +29,12 @@ nav {
 
 .splash-container {
     background: black;
-    z-index: 1;
-    overflow: hidden;
-    /* The following styles are required for the "scroll-over" effect */
-    width: 100%;
-    height: 88%;
-    top: 0;
-    left: 0;
-    position: fixed !important;
 }
 
 .splash {
     /* absolute center .splash within .splash-container */
     width: 80%;
-    height: 50%;
     margin: auto;
-    position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: lowercase;
 }
@@ -53,7 +42,6 @@ nav {
 /* This is the main heading that appears on the black section */
 .splash-head {
     font-size: 20px;
-    font-weight: bold;
     color: white;
     border-bottom: 3px solid white;
     padding: 1em 1.6em;
@@ -69,35 +57,18 @@ nav {
     opacity: 0.8;
 }
 
-.content-wrapper {
-    /* These styles are required for the "scroll-over" effect */
-    position: absolute;
-    top: 87%;
+.splash-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    min-height: 12%;
-    z-index: 2;
-    background: #222;
+    text-align: center;
+    padding: 1em;
 }
+
 .abox {
-    background-color: cornflowerblue;
-    padding: 1rem;
+    background-color: #C83689;
+    padding: 0.25em;
     text-align: center;
     border: 1px solid #222222;
-}
-.abox:nth-child(1) {
-    order: 0;
-  }
-  .abox:nth-child(2) {
-    order: 1;
-  }
-  .abox:nth-child(3) {
-    order: 2;
-  }
-  .abox:nth-child(4) {
-    order: 3;
-  }
-  .bbox {
-    background-color: slategrey;
-    padding: 1rem;
-    text-align: center; 
 }
