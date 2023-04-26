@@ -32,14 +32,13 @@ a {
 }
 
 .splash {
-    /* absolute center .splash within .splash-container */
     width: 80%;
     margin: auto;
     text-align: center;
     text-transform: lowercase;
 }
 
-/* This is the main heading that appears on the black section */
+
 .splash-head {
     font-size: 20px;
     color: white;
@@ -50,7 +49,6 @@ a {
     line-height: 1em;
 }
 
-/* This is the subheading that appears on the black section */
 .splash-subhead {
     color: white;
     letter-spacing: 0.05em;
